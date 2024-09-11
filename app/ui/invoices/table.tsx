@@ -28,10 +28,10 @@ export default async function InvoicesTable({
                     <div className="mb-2 flex items-center">
                       <Image
                         src={invoice.image_url}
+                        alt={`${invoice.name}'s profile picture`}
                         className="mr-2 rounded-full"
                         width={28}
                         height={28}
-                        alt={`${invoice.name}'s profile picture`}
                       />
                       <p>{invoice.name}</p>
                     </div>
@@ -109,8 +109,8 @@ export default async function InvoicesTable({
                   </td>
                   <td className="whitespace-nowrap py-3 pl-6 pr-3">
                     <div className="flex justify-end gap-3">
-                      <UpdateInvoice id={invoice.id} />
-                      <DeleteInvoice id={invoice.id} />
+                    <UpdateInvoice id={invoice.id} />
+                    <DeleteInvoice id={invoice.id} />
                     </div>
                   </td>
                 </tr>
