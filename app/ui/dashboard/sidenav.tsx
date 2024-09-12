@@ -11,7 +11,7 @@ import { useFormState } from 'react-dom';
 
 export default function SideNav() {
   const pathname = usePathname(); // Keep this line
-  const [_, formAction] = useFormState(handleSignOut, null);
+  const [, formAction] = useFormState(handleSignOut, null);
 
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
